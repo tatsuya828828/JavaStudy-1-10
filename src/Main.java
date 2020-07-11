@@ -9,7 +9,7 @@ public final class Main {
 		System.out.println(superHero.getName());
 		superHero.attack();
 		superHero.run();
-		Hero hero = new Hero();
+		Hero hero = new Hero("ミナト");
 		hero.run();
 	}
 }
