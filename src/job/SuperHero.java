@@ -26,4 +26,12 @@ public class SuperHero extends Hero {
 	// 	System.out.println(this.getName() +"は転んだがダメージを受けなかった");
 	// }
 
+	public void attack() {
+		// オーバーライドしても、子クラスのメソッドが呼び出されるだけで親クラスはなくならず、呼び出すことで使うことができる
+		// superとは一つ内側のインスタンスを表す予約語
+		super.attack();
+		super.attack();
+		System.out.println(this.getName() +"は、2回攻撃した");
+	}
+
 }
