@@ -1,5 +1,6 @@
 package job;
 // もしクラス宣言時にfinalがついていた場合そのクラスは継承できない
+// 継承は現実世界をもとに考えたときに「子クラスは親クラスの一種である」という言葉が成り立つようにしなければならない
 public class SuperHero extends Hero {
 	private boolean flying;
 
