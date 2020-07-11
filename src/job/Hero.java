@@ -30,4 +30,13 @@ public class Hero {
 		this.hp -= 5;
 		System.out.println(this.name +"は転んで5のダメージを受けた");
 	}
+
+	public int getHp() {
+		// TODO 自動生成されたメソッド・スタブ
+		return this.hp;
+	}
+
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
 }
