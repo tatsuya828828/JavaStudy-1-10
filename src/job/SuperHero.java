@@ -3,6 +3,15 @@ package job;
 public class SuperHero extends Hero {
 	private boolean flying;
 
+	public SuperHero() {
+		// 先頭で必ず内部インスタンスのコンストラクタを呼び出さなければいけないというルールがある
+		// 何も記述がない場合は自動的に親クラスのコンストラクタが呼び出される
+		// super();
+		// もし内部インスタンスのコンストラクタに引数が必要な場合は必ず定義しなければならない
+		super("ミナト");
+		System.out.println("SuperHeroのコンストラクタが作動");
+	}
+
 	public void fly() {
 		this.flying = true;
 		System.out.println("飛び上がった");

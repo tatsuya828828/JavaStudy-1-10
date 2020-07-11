@@ -1,8 +1,13 @@
 package job;
 
 public class Hero {
-	private String name = "ミナト";
+	private String name;
 	private int hp = 100;
+
+	public Hero(String name) {
+		this.name = name;
+		System.out.println("Heroのコンストラクタが作動");
+	}
 
 	public void attack() {
 		System.out.println(this.getName() +"の攻撃");
